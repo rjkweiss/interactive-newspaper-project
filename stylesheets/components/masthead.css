@@ -1,1 +1,82 @@
 /* Your code here */
+.masthead {
+    display: grid;
+    grid-template:
+        "menu-and-search . action-buttons"
+        ". tech-stack ."
+        "date logo paper";
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.masthead__menu-and-search {
+    align-items: center;
+    display: flex;
+    grid-area: menu-and-search;
+    padding-left: 20px;
+}
+
+.masthead__button-icon {
+    font-size: 11px;
+    padding: 7px 9px;
+}
+
+.masthead__button-icon:hover {
+    background-color: #f7f7f5;
+}
+
+.masthead__action-buttons {
+    align-items: center;
+    display: flex;
+    grid-area: action-buttons;
+    height: 45px;
+    justify-content: flex-end;
+}
+.masthead__tech-stack {
+    background-color: white;
+    border-left: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+    border-top: 1px solid#e2e2e2;
+    display: flex;
+    grid-area: tech-stack;
+    justify-content: center;
+    position: relative;
+    top: 1px;
+}
+
+.technologies {
+    color: #6f6f6f;
+    font-size: 10px;
+    margin: 0 5px;
+    text-transform: uppercase;
+}
+
+.masthead__date {
+    align-items: flex-end;
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+    display: flex;
+    grid-area: date;
+    line-height: 11px;
+    padding: 11px 0;
+}
+
+.masthead__logo {
+    align-items: center;
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+    display: flex;
+    grid-area: logo;
+    justify-content: center;
+    padding: 11px 0;
+}
+
+.masthead__paper {
+    align-items: flex-end;
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+    display: flex;
+    grid-area: paper;
+    justify-content: flex-end;
+    line-height: 11px;
+    padding: 11px 0;
+}
