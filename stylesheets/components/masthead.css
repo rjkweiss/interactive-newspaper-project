@@ -75,8 +75,17 @@
     border-bottom: 1px solid #e2e2e2;
     border-top: 1px solid #e2e2e2;
     display: flex;
+    gap: 5px;
     grid-area: paper;
     justify-content: flex-end;
     line-height: 11px;
     padding: 11px 0;
+}
+/* .masthead__paper-icon {
+    border: 2px solid red;
+} */
+
+.masthead__paper-text {
+    /* border: 2px solid mediumseagreen; */
+    padding: 2px 0;
 }
