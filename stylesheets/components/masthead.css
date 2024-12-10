@@ -89,3 +89,13 @@
     /* border: 2px solid mediumseagreen; */
     padding: 2px 0;
 }
+
+@media (max-width: 899px) {
+    button {
+        display: none;
+    }
+
+    .masthead__date, .masthead__paper-text{
+        font-size: 12px;
+    }
+}
